@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y7S-b2-Pc2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3R3-IQ-wLw">
+            <objects>
+                <viewController id="Y7S-b2-Pc2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pCn-gE-q1q"/>
+                        <viewControllerLayoutGuide type="bottom" id="UTN-uc-YpI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o2P-HD-4XJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boot" translatesAutoresizingMaskIntoConstraints="NO" id="Aen-IG-TOQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="A28-k3-Aew" appends="YES" id="wQw-Pa-dav"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWb-ZV-GC7">
+                                <rect key="frame" x="207" y="403" width="104" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S7F-Ul-GKC" kind="showDetail" id="Zgv-H0-TTY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.93017353179999995" blue="0.87058521870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Aen-IG-TOQ" firstAttribute="leading" secondItem="o2P-HD-4XJ" secondAttribute="leading" id="3q1-qV-1Cg"/>
+                            <constraint firstAttribute="trailing" secondItem="Aen-IG-TOQ" secondAttribute="trailing" id="Sqs-it-Wme"/>
+                            <constraint firstItem="GWb-ZV-GC7" firstAttribute="top" secondItem="pCn-gE-q1q" secondAttribute="bottom" constant="367" id="V7Q-T8-Jvj"/>
+                            <constraint firstItem="Aen-IG-TOQ" firstAttribute="top" secondItem="o2P-HD-4XJ" secondAttribute="top" id="XTh-Yb-Hvb"/>
+                            <constraint firstItem="UTN-uc-YpI" firstAttribute="top" secondItem="Aen-IG-TOQ" secondAttribute="bottom" id="aQb-dg-iWq"/>
+                            <constraint firstAttribute="trailing" secondItem="Aen-IG-TOQ" secondAttribute="trailing" id="b2c-2l-kUl"/>
+                            <constraint firstItem="Aen-IG-TOQ" firstAttribute="top" secondItem="o2P-HD-4XJ" secondAttribute="top" id="bWe-rM-NMf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GWb-ZV-GC7" secondAttribute="trailing" constant="45" id="cYC-a4-Ipo"/>
+                            <constraint firstItem="GWb-ZV-GC7" firstAttribute="leading" secondItem="o2P-HD-4XJ" secondAttribute="leadingMargin" constant="178" id="jsX-Am-hU2"/>
+                            <constraint firstItem="UTN-uc-YpI" firstAttribute="top" secondItem="GWb-ZV-GC7" secondAttribute="bottom" constant="195" id="sXm-A8-nvM"/>
+                            <constraint firstItem="UTN-uc-YpI" firstAttribute="top" secondItem="Aen-IG-TOQ" secondAttribute="bottom" id="sqc-vm-VeW"/>
+                            <constraint firstItem="Aen-IG-TOQ" firstAttribute="leading" secondItem="o2P-HD-4XJ" secondAttribute="leading" id="yFT-we-Bq7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g1U-gt-CN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="A28-k3-Aew"/>
+            </objects>
+            <point key="canvasLocation" x="352.80000000000001" y="-83.208395802098963"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wIs-fU-yJy">
+            <objects>
+                <viewController id="S7F-Ul-GKC" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j92-ei-sCm"/>
+                        <viewControllerLayoutGuide type="bottom" id="gqi-Ze-3ux"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wev-h8-F0x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Med-pC-pko">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="leO-81-ev0" userLabel="GameView" customClass="GameView">
+                                <rect key="frame" x="0.0" y="0.0" width="372" height="659"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6T-hY-5cR">
+                                        <rect key="frame" x="15" y="8" width="47" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Bricks!">
+                                            <color key="titleColor" red="1" green="0.46911423829999999" blue="0.48174380550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="makeBricks:" destination="leO-81-ev0" eventType="touchUpInside" id="39b-UY-JjN"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="your score:0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieJ-3A-46c">
+                                        <rect key="frame" x="76" y="230" width="233" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWG-sZ-Oey">
+                                        <rect key="frame" x="153" y="370" width="170" height="67"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="Play again!">
+                                            <color key="titleColor" red="1" green="0.49687252069999999" blue="0.3742381977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tryagain:" destination="leO-81-ev0" eventType="touchUpInside" id="jg8-YR-J5z"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Over!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yX2-qP-jR4">
+                                        <rect key="frame" x="74" y="150" width="226" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="35"/>
+                                        <color key="textColor" red="1" green="0.49687252069999999" blue="0.3742381977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otY-rF-h4S">
+                                        <rect key="frame" x="299" y="23" width="77" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.49687252069999999" blue="0.3742381977" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your high score:0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s46-tV-rRD">
+                                        <rect key="frame" x="86" y="303" width="266" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rW5-Jv-Eu2">
+                                        <rect key="frame" x="0.0" y="605" width="377" height="31"/>
+                                        <connections>
+                                            <action selector="speedChange:" destination="S7F-Ul-GKC" eventType="valueChanged" id="TCP-NM-vBp"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="rW5-Jv-Eu2" firstAttribute="leading" secondItem="leO-81-ev0" secondAttribute="leading" id="Irh-VO-Q1P"/>
+                                    <constraint firstAttribute="bottom" secondItem="rW5-Jv-Eu2" secondAttribute="bottom" constant="24" id="Jl7-IO-0Gq"/>
+                                    <constraint firstAttribute="trailing" secondItem="rW5-Jv-Eu2" secondAttribute="trailing" id="ZdO-Fn-sfU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="gameover" destination="yX2-qP-jR4" id="e8t-K9-as9"/>
+                                    <outlet property="highscore" destination="s46-tV-rRD" id="s2z-KJ-DiQ"/>
+                                    <outlet property="replay" destination="bWG-sZ-Oey" id="OzS-58-9Nf"/>
+                                    <outlet property="score" destination="otY-rF-h4S" id="Ka1-cB-Dl3"/>
+                                    <outlet property="yourscore" destination="ieJ-3A-46c" id="BjX-P8-Ny0"/>
+                                    <outletCollection property="gestureRecognizers" destination="GQr-Qu-qxB" appends="YES" id="w1P-4d-DfQ"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52534731040000004" green="0.77345599700000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gqi-Ze-3ux" firstAttribute="top" secondItem="leO-81-ev0" secondAttribute="bottom" id="3q4-W8-t0l"/>
+                            <constraint firstAttribute="trailing" secondItem="leO-81-ev0" secondAttribute="trailing" id="4lb-Sh-hep"/>
+                            <constraint firstItem="leO-81-ev0" firstAttribute="leading" secondItem="wev-h8-F0x" secondAttribute="leading" id="HWj-uK-UfQ"/>
+                            <constraint firstItem="Med-pC-pko" firstAttribute="leading" secondItem="wev-h8-F0x" secondAttribute="leading" id="KYd-zT-KDi"/>
+                            <constraint firstItem="leO-81-ev0" firstAttribute="top" secondItem="wev-h8-F0x" secondAttribute="top" id="L6j-3Q-xOP"/>
+                            <constraint firstAttribute="trailing" secondItem="leO-81-ev0" secondAttribute="trailing" id="NdJ-Mo-fHD"/>
+                            <constraint firstItem="leO-81-ev0" firstAttribute="leading" secondItem="wev-h8-F0x" secondAttribute="leading" id="PLj-d2-iez"/>
+                            <constraint firstAttribute="trailing" secondItem="Med-pC-pko" secondAttribute="trailing" id="YiP-T1-X18"/>
+                            <constraint firstItem="leO-81-ev0" firstAttribute="top" secondItem="wev-h8-F0x" secondAttribute="top" id="gWb-5N-zMH"/>
+                            <constraint firstItem="Med-pC-pko" firstAttribute="top" secondItem="wev-h8-F0x" secondAttribute="top" id="ipl-hs-dYe"/>
+                            <constraint firstItem="gqi-Ze-3ux" firstAttribute="top" secondItem="leO-81-ev0" secondAttribute="bottom" id="mrK-qR-rDB"/>
+                            <constraint firstItem="gqi-Ze-3ux" firstAttribute="top" secondItem="Med-pC-pko" secondAttribute="bottom" id="zL7-FA-qqT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0e5-zm-RIv"/>
+                    <connections>
+                        <outlet property="gameView" destination="leO-81-ev0" id="9S6-cB-sye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZA-YY-bca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="GQr-Qu-qxB"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="-98.50074962518741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="266" height="425"/>
+        <image name="boot" width="540" height="960"/>
+    </resources>
+</document>
